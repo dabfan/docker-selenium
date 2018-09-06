@@ -30,5 +30,5 @@ RUN apt-get -y install nodejs
 RUN nodejs -v
 RUN npm -v
 
-USER seluser
+# USER seluser
 # RUN apk --no-cache add curl openssh-client git bash
