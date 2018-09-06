@@ -1,5 +1,6 @@
 # FROM loyaltyone/docker-alpine-java-node
-FROM selenium/standalone-chrome
+# FROM selenium/standalone-chrome
+FROM selenium/node-chrome
 
 LABEL maintainer="faneldabija2008@gmail.com"
 
