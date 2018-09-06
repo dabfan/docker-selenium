@@ -13,9 +13,10 @@ ENV NVM_DIR="/root/.nvm"
 RUN mkdir $NVM_DIR | true
 RUN apt-get -y update
 RUN apt-get -y install ssh git libnss3 libgconf-2-4 curl
-
-RUN curl https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-RUN [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+RUN apt-get -y install nodejs
+RUN apt-get -y install npm
+# RUN curl https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+# RUN [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 # RUN . /root/.profile
 # RUN nvm install 8.9.3
 
