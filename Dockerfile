@@ -1,6 +1,6 @@
 # FROM loyaltyone/docker-alpine-java-node
-FROM selenium/standalone-chrome
 # FROM selenium/node-chrome
+FROM selenium/standalone-chrome
 
 LABEL maintainer="faneldabija2008@gmail.com"
 
@@ -30,5 +30,5 @@ RUN apt-get -y install nodejs
 RUN nodejs -v
 RUN npm -v
 
-# USER seluser
+USER seluser
 # RUN apk --no-cache add curl openssh-client git bash
