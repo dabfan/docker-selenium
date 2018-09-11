@@ -8,6 +8,7 @@ RUN apk --no-cache add \
     tini \
     # Install ffmpeg for video recording:
     ffmpeg \
+    curl \
   && npm install -g \
     # Install Nightwatch.js:
     nightwatch \
