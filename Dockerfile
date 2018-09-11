@@ -30,6 +30,4 @@ WORKDIR /home/node
 COPY wait-for.sh /usr/local/bin/wait-for
 COPY entrypoint.sh /usr/local/bin/entrypoint
 
-EXPOSE 3000
-
 ENTRYPOINT ["entrypoint"]
